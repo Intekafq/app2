@@ -125,3 +125,12 @@
 p{
   text-align: center;
 }
+.table{
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 10px;
+  width: 100%;
+  border: 1px soild aqua;
+
+}
