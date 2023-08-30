@@ -1,4 +1,13 @@
+:root {
+  --cardWidth: 240px;
+  --cardHeight: 280px;
+  --cardMargin: 16px;
+}
+
+
+
 .App {
+
   text-align: center;
 
   
@@ -90,4 +99,29 @@
   padding: 0px 9px 0px 9px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   align-items: center;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 10px;
+
+}
+
+.card-item{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  box-sizing: border-box;
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  overflow-wrap: break-word;
+}
+p{
+  text-align: center;
 }

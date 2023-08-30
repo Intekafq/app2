@@ -3,13 +3,15 @@ import './App.css';
 import React, {useState} from 'react';
 import Record from './pages/Record';
 import Oneform from './pages/Oneform';
+import Post from './pages/Post';
 function App() {
 
   
   return (
     <div className="App">
-     
-      <Oneform />
+      {/*<Record />
+  <Oneform />*/}
+  <Post />
     </div>
   );
 }

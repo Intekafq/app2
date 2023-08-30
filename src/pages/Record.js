@@ -23,7 +23,6 @@ const removeItem = (index)=>
   let arr = data;
   arr.splice(index, 1);
   setData([...arr]);
-  
 }
   return (
     <div>
@@ -63,7 +62,7 @@ const removeItem = (index)=>
                     
                     <h3>{element.name}</h3>
                     <h3>{element.email}</h3>
-                   <Button variant="contained" color="error" onClick={() => removeItem(index)}><DeleteForeverIcon /></Button>
+                   <Button variant="contained" color="error" onClick={() => removeItem}><DeleteForeverIcon /></Button>
                   </div>
                 </div>
                 )
