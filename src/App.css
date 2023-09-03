@@ -134,3 +134,27 @@ p{
   border: 1px soild aqua;
 
 }
+.nav {
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.nav li,a{
+
+  list-style: none;
+  font-size: larger;
+
+  text-decoration: none;
+}
+
+li:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+img{
+margin-top: 10px;
+  height: 50rem;
+  width: auto;
+}

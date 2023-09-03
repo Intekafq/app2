@@ -26,10 +26,12 @@ const removeItem = (index)=>
 }
   return (
     <div>
-      <Header />
+     
+      <h1>Home</h1>
       <div className="form">
         <Stack direction="row" spacing={2}>
           <TextField
+          onCopy={() => window.alert("don't copy")}
             value={name}
             onChange={(e) => setName(e.target.value)}
             id="outlined-basic"
@@ -43,7 +45,7 @@ const removeItem = (index)=>
             label="Email"
             variant="outlined"
           />
-          <Button variant="contained" onClick={addData}>
+          <Button variant="contained" onClick={addData} draggable onDrag={()=> console.log("dragged...")}>
             <AddIcon />
           </Button>
         </Stack>
@@ -62,7 +64,7 @@ const removeItem = (index)=>
                     
                     <h3>{element.name}</h3>
                     <h3>{element.email}</h3>
-                   <Button variant="contained" color="error" onClick={() => removeItem}><DeleteForeverIcon /></Button>
+                   <Button variant="contained" color="error" onClick={() => removeItem(index)}><DeleteForeverIcon /></Button>
                   </div>
                 </div>
                 )
